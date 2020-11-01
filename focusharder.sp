@@ -23,7 +23,7 @@ public void OnMapStart() {
     PrecacheSound(REPLAY_RESUME, true);
 }
 public void OnPluginStart() {
-    CreateConVar("focusharder_version", PLUGIN_VERSION, PLUGIN_NAME, FCVAR_NOTIFY|FCVAR_DONTRECORD);
+    CreateConVar("focusharder_version", PLUGIN_VERSION, "[TF2] Focus Harder version", FCVAR_NOTIFY|FCVAR_DONTRECORD);
 }
 public void TF2_OnConditionAdded(int client, TFCond cond) {
     if (IsFakeClient(client)) {
